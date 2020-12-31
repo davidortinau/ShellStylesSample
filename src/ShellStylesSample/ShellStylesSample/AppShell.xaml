@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:app="clr-namespace:ShellStylesSample"
+       xmlns:common="clr-namespace:Common"
+       x:Class="ShellStylesSample.AppShell"
+       >
+
+    <Shell.Resources>
+        <FontImageSource
+            x:Key="IconBack"
+            FontFamily="FontAwesome"
+            Glyph="{x:Static common:IconFont.Backward}"
+            Size="18"
+            Color="#1d1d1d"/>
+        <FontImageSource
+            x:Key="IconSignout"
+            FontFamily="FontAwesome"
+            Glyph="{x:Static common:IconFont.SignOutAlt}"
+            Size="18"
+            Color="#1d1d1d"/>
+        <FontImageSource
+            x:Key="IconInfo"
+            FontFamily="FontAwesome"
+            Glyph="{x:Static common:IconFont.Info}"
+            Size="18"
+            Color="#1d1d1d"/>
+        <FontImageSource
+            x:Key="IconHome"
+            FontFamily="FontAwesome"
+            Glyph="{x:Static common:IconFont.Home}"
+            Size="18"
+            Color="#1d1d1d"/>
+    </Shell.Resources>
+
+    <!--<TabBar>
+        <Tab Title="Main Page" Icon="{StaticResource IconHome}">
+            <ShellContent Title="Main Page" ContentTemplate="{DataTemplate app:MainPage}"/>
+        </Tab>
+        <Tab Title="Info Page" Icon="{StaticResource IconInfo}"
+             >
+            <ShellContent Title="Main Page" ContentTemplate="{DataTemplate app:MainPage}"/>
+        </Tab>
+        <Tab Title="Back Page" Icon="{StaticResource IconBack}">
+            <ShellContent Title="Main Page" ContentTemplate="{DataTemplate app:MainPage}"/>
+        </Tab>
+        <Tab Title="Sign Out Page" Icon="{StaticResource IconSignout}">
+            <ShellContent Title="Main Page" ContentTemplate="{DataTemplate app:MainPage}"/>
+        </Tab>
+    </TabBar>-->
+
+    <FlyoutItem Title="Main Page" Icon="{StaticResource IconHome}">
+        <ShellContent Title="Main Page" ContentTemplate="{DataTemplate app:MainPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Info Page" Icon="{StaticResource IconInfo}"
+            >
+        <ShellContent Title="Main Page" ContentTemplate="{DataTemplate app:MainPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Back Page" Icon="{StaticResource IconBack}">
+        <ShellContent Title="Main Page" ContentTemplate="{DataTemplate app:MainPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Sign Out Page" Icon="{StaticResource IconSignout}">
+        <ShellContent Title="Main Page" ContentTemplate="{DataTemplate app:MainPage}"/>
+    </FlyoutItem>
+
+
+</Shell>
